@@ -44,7 +44,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['login'])) {
             $mail->Port = 465;
             $mail->SMTPSecure = 'ssl';
             $mail->isHTML(true);
-            $mail->setFrom('example@gmail.com', 'lab_assignmentii');
+            $mail->setFrom('example@gmail.com', 'RakichWande');
             $mail->addAddress($email, $data['username'] ?? 'User'); // Use 'User' as fallback for $name
             $mail->Subject = $subject;
             $mail->Body = $message;
